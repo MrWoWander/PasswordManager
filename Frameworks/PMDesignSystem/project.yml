@@ -1,0 +1,27 @@
+name: PMDesignSystemApp
+options:
+  bundleIdPrefix: ru.Senla
+packages:
+  PMDesignSystem:
+    path: ./
+targets:
+  App:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    info:
+      path: Application/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+    sources: 
+      - path: Application/
+    dependencies:
+      - sdk: SwiftUI.framework
+      - package: PMDesignSystem
+    settings:
+      base:
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1
+        OTHER_LDFLAGS: "-Xlinker -interposable -Xlinker -undefined -Xlinker dynamic_lookup"
+        INFOPLIST_FILE: "Application/Info.plist"

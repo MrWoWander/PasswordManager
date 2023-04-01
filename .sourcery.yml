@@ -1,0 +1,12 @@
+sources:
+  - PasswordManager/
+templates:
+  - Templates/Sourcery/AutoMockable.stencil
+output:
+  PasswordManagerTests/AutoMockable.generated.swift
+args:
+  app: PasswordManager
+  imports:
+    - PMCore
+    - PMDesignSystem
+    - SwiftUI

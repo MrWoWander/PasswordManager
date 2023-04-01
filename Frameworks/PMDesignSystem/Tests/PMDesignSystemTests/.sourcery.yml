@@ -1,0 +1,11 @@
+sources:
+  - ../../Sources/PMDesignSystem/
+templates:
+  - ../../../../Templates/Sourcery/AutoMockable.stencil
+output:
+   AutoMockable.generated.swift
+args:
+  app: PMDesignSystem
+  imports:
+    - PMCore
+    - SwiftUI

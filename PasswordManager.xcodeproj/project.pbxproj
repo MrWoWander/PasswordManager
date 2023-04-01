@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D02705E29D8BB0300DD96B5 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 6D02705D29D8BB0300DD96B5 /* Nimble */; };
+		6D02706129D8BB2600DD96B5 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 6D02706029D8BB2600DD96B5 /* Quick */; };
+		6D82040429D8C3AA00942409 /* PMCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D82040329D8C3AA00942409 /* PMCore */; };
+		6D82040629D8C3AE00942409 /* PMDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 6D82040529D8C3AE00942409 /* PMDesignSystem */; };
+		6D82040929D8C69600942409 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D82040829D8C69600942409 /* AutoMockable.generated.swift */; };
+		6DABB2C029D847A10040374C /* PasswordManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABB2BF29D847A10040374C /* PasswordManagerApp.swift */; };
+		6DABB2C229D847A10040374C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABB2C129D847A10040374C /* ContentView.swift */; };
+		6DABB2C429D847A20040374C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DABB2C329D847A20040374C /* Assets.xcassets */; };
+		6DABB2C729D847A20040374C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DABB2C629D847A20040374C /* Preview Assets.xcassets */; };
+		6DABB2D129D847A20040374C /* PasswordManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABB2D029D847A20040374C /* PasswordManagerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DABB2CD29D847A20040374C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DABB2B429D847A10040374C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DABB2BB29D847A10040374C;
+			remoteInfo = PasswordManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D02706229D8BB4E00DD96B5 /* PMPlugins */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMPlugins; path = Frameworks/PMPlugins; sourceTree = "<group>"; };
+		6D4CB78A29D88318009E9C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6D82040729D8C51700942409 /* PasswordManager.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = PasswordManager.xctestplan; sourceTree = SOURCE_ROOT; };
+		6D82040829D8C69600942409 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
+		6DABB2BC29D847A10040374C /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DABB2BF29D847A10040374C /* PasswordManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerApp.swift; sourceTree = "<group>"; };
+		6DABB2C129D847A10040374C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6DABB2C329D847A20040374C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DABB2C629D847A20040374C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DABB2CC29D847A20040374C /* PasswordManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DABB2D029D847A20040374C /* PasswordManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerTests.swift; sourceTree = "<group>"; };
+		6DABB2EA29D84B560040374C /* PMCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMCore; path = Frameworks/PMCore; sourceTree = "<group>"; };
+		6DABB2EE29D856380040374C /* PMDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMDesignSystem; path = Frameworks/PMDesignSystem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DABB2B929D847A10040374C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DABB2C929D847A20040374C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D02706129D8BB2600DD96B5 /* Quick in Frameworks */,
+				6D02705E29D8BB0300DD96B5 /* Nimble in Frameworks */,
+				6D82040629D8C3AE00942409 /* PMDesignSystem in Frameworks */,
+				6D82040429D8C3AA00942409 /* PMCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D02705B29D89DE400DD96B5 /* Fetures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fetures;
+			path = Frameworks/Fetures;
+			sourceTree = "<group>";
+		};
+		6D82040229D8C3AA00942409 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DABB2B329D847A10040374C = {
+			isa = PBXGroup;
+			children = (
+				6DABB2BE29D847A10040374C /* PasswordManager */,
+				6DABB2CF29D847A20040374C /* PasswordManagerTests */,
+				6D02705B29D89DE400DD96B5 /* Fetures */,
+				6DABB2E929D84B560040374C /* Packages */,
+				6DABB2BD29D847A10040374C /* Products */,
+				6D82040229D8C3AA00942409 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DABB2BD29D847A10040374C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DABB2BC29D847A10040374C /* PasswordManager.app */,
+				6DABB2CC29D847A20040374C /* PasswordManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DABB2BE29D847A10040374C /* PasswordManager */ = {
+			isa = PBXGroup;
+			children = (
+				6D4CB78A29D88318009E9C07 /* Info.plist */,
+				6DABB2BF29D847A10040374C /* PasswordManagerApp.swift */,
+				6DABB2C129D847A10040374C /* ContentView.swift */,
+				6DABB2C329D847A20040374C /* Assets.xcassets */,
+				6DABB2C529D847A20040374C /* Preview Content */,
+			);
+			path = PasswordManager;
+			sourceTree = "<group>";
+		};
+		6DABB2C529D847A20040374C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6DABB2C629D847A20040374C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6DABB2CF29D847A20040374C /* PasswordManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D82040829D8C69600942409 /* AutoMockable.generated.swift */,
+				6DABB2D029D847A20040374C /* PasswordManagerTests.swift */,
+				6D82040729D8C51700942409 /* PasswordManager.xctestplan */,
+			);
+			path = PasswordManagerTests;
+			sourceTree = "<group>";
+		};
+		6DABB2E929D84B560040374C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6DABB2EA29D84B560040374C /* PMCore */,
+				6DABB2EE29D856380040374C /* PMDesignSystem */,
+				6D02706229D8BB4E00DD96B5 /* PMPlugins */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DABB2BB29D847A10040374C /* PasswordManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DABB2E029D847A20040374C /* Build configuration list for PBXNativeTarget "PasswordManager" */;
+			buildPhases = (
+				6DABB2B829D847A10040374C /* Sources */,
+				6DABB2B929D847A10040374C /* Frameworks */,
+				6DABB2BA29D847A10040374C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D02705829D89D4200DD96B5 /* PBXTargetDependency */,
+			);
+			name = PasswordManager;
+			productName = PasswordManager;
+			productReference = 6DABB2BC29D847A10040374C /* PasswordManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DABB2CB29D847A20040374C /* PasswordManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DABB2E329D847A20040374C /* Build configuration list for PBXNativeTarget "PasswordManagerTests" */;
+			buildPhases = (
+				6DABB2C829D847A20040374C /* Sources */,
+				6DABB2C929D847A20040374C /* Frameworks */,
+				6DABB2CA29D847A20040374C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D8203FF29D8BB7100942409 /* PBXTargetDependency */,
+				6D82040129D8BB7100942409 /* PBXTargetDependency */,
+				6DABB2CE29D847A20040374C /* PBXTargetDependency */,
+			);
+			name = PasswordManagerTests;
+			packageProductDependencies = (
+				6D02705D29D8BB0300DD96B5 /* Nimble */,
+				6D02706029D8BB2600DD96B5 /* Quick */,
+				6D82040329D8C3AA00942409 /* PMCore */,
+				6D82040529D8C3AE00942409 /* PMDesignSystem */,
+			);
+			productName = PasswordManagerTests;
+			productReference = 6DABB2CC29D847A20040374C /* PasswordManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DABB2B429D847A10040374C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6DABB2BB29D847A10040374C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					6DABB2CB29D847A20040374C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6DABB2BB29D847A10040374C;
+					};
+				};
+			};
+			buildConfigurationList = 6DABB2B729D847A10040374C /* Build configuration list for PBXProject "PasswordManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DABB2B329D847A10040374C;
+			packageReferences = (
+				6D02705C29D8BB0300DD96B5 /* XCRemoteSwiftPackageReference "Nimble" */,
+				6D02705F29D8BB2600DD96B5 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
+			productRefGroup = 6DABB2BD29D847A10040374C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DABB2BB29D847A10040374C /* PasswordManager */,
+				6DABB2CB29D847A20040374C /* PasswordManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DABB2BA29D847A10040374C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DABB2C729D847A20040374C /* Preview Assets.xcassets in Resources */,
+				6DABB2C429D847A20040374C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DABB2CA29D847A20040374C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DABB2B829D847A10040374C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DABB2C229D847A10040374C /* ContentView.swift in Sources */,
+				6DABB2C029D847A10040374C /* PasswordManagerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DABB2C829D847A20040374C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DABB2D129D847A20040374C /* PasswordManagerTests.swift in Sources */,
+				6D82040929D8C69600942409 /* AutoMockable.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D02705829D89D4200DD96B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6D02705729D89D4200DD96B5 /* PMSwiftLintPlugin */;
+		};
+		6D8203FF29D8BB7100942409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6D8203FE29D8BB7100942409 /* PMSourceryPlugin */;
+		};
+		6D82040129D8BB7100942409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6D82040029D8BB7100942409 /* PMSwiftLintPlugin */;
+		};
+		6DABB2CE29D847A20040374C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DABB2BB29D847A10040374C /* PasswordManager */;
+			targetProxy = 6DABB2CD29D847A20040374C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6DABB2DE29D847A20040374C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DABB2DF29D847A20040374C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DABB2E129D847A20040374C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PasswordManager/Preview Content\"";
+				DEVELOPMENT_TEAM = ZBVHAA67XK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Senla.PasswordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6DABB2E229D847A20040374C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PasswordManager/Preview Content\"";
+				DEVELOPMENT_TEAM = ZBVHAA67XK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Senla.PasswordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6DABB2E429D847A20040374C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZBVHAA67XK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Senla.PasswordManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PasswordManager";
+			};
+			name = Debug;
+		};
+		6DABB2E529D847A20040374C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZBVHAA67XK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Senla.PasswordManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PasswordManager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DABB2B729D847A10040374C /* Build configuration list for PBXProject "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DABB2DE29D847A20040374C /* Debug */,
+				6DABB2DF29D847A20040374C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DABB2E029D847A20040374C /* Build configuration list for PBXNativeTarget "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DABB2E129D847A20040374C /* Debug */,
+				6DABB2E229D847A20040374C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DABB2E329D847A20040374C /* Build configuration list for PBXNativeTarget "PasswordManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DABB2E429D847A20040374C /* Debug */,
+				6DABB2E529D847A20040374C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D02705C29D8BB0300DD96B5 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		6D02705F29D8BB2600DD96B5 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D02705729D89D4200DD96B5 /* PMSwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:PMSwiftLintPlugin";
+		};
+		6D02705D29D8BB0300DD96B5 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D02705C29D8BB0300DD96B5 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		6D02706029D8BB2600DD96B5 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D02705F29D8BB2600DD96B5 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		6D8203FE29D8BB7100942409 /* PMSourceryPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:PMSourceryPlugin";
+		};
+		6D82040029D8BB7100942409 /* PMSwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:PMSwiftLintPlugin";
+		};
+		6D82040329D8C3AA00942409 /* PMCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PMCore;
+		};
+		6D82040529D8C3AE00942409 /* PMDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PMDesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6DABB2B429D847A10040374C /* Project object */;
+}
