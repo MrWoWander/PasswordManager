@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		6AC256C2817E709EEB603467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20BECC6DFB471419C62B08 /* ContentView.swift */; };
 		6C85A60B66D8D9B1BDF98963 /* PMDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = B45F3215A51550E2597BA7F0 /* PMDesignSystem */; };
 		99A1ED876CBC2D5577596F6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA238EC498884246BF28D90C /* Preview Assets.xcassets */; };
-		AE8656BA7369DC895A580F6E /* PMDesignSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B92C41AFE8B2A2CD28433 /* PMDesignSystemApp.swift */; };
+		C71D6FE9C6BD8A43A134F6D3 /* PMDesignSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECC853486A2B62D8069D9F /* PMDesignSystemApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		6EB39A16E8CD0148B7C037BE /* PMDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PMDesignSystem; path = .; sourceTree = SOURCE_ROOT; };
 		9DD75F2453E852180D201337 /* App.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80B7067E81B612F6813ECB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		C93B92C41AFE8B2A2CD28433 /* PMDesignSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMDesignSystemApp.swift; sourceTree = "<group>"; };
+		ACECC853486A2B62D8069D9F /* PMDesignSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMDesignSystemApp.swift; sourceTree = "<group>"; };
 		D201A7E991806409FA31F939 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		DA238EC498884246BF28D90C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB1B7FD22A796A5329A0D116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,9 +76,9 @@
 		4EE5FD08E70DF006B6685072 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				C93B92C41AFE8B2A2CD28433 /* PMDesignSystemApp.swift */,
 				FB1B7FD22A796A5329A0D116 /* Assets.xcassets */,
 				A80B7067E81B612F6813ECB3 /* Info.plist */,
+				ACECC853486A2B62D8069D9F /* PMDesignSystemApp.swift */,
 				2A97CBECB291861B5F90583E /* Preview Content */,
 				480E6268B81088614C93D973 /* Sources */,
 			);
@@ -131,6 +131,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 8AE5E9088C59C659D09F610C /* Build configuration list for PBXProject "PMDesignSystemApp" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -167,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC256C2817E709EEB603467 /* ContentView.swift in Sources */,
-				AE8656BA7369DC895A580F6E /* PMDesignSystemApp.swift in Sources */,
+				C71D6FE9C6BD8A43A134F6D3 /* PMDesignSystemApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +251,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1;
-				OTHER_LDFLAGS = (
-					"-Xlinker",
-					"-interposable",
-					"-Xlinker",
-					"-undefined",
-					"-Xlinker",
-					dynamic_lookup,
-				);
+				OTHER_LDFLAGS = "-Xlinker -interposable -Xlinker -undefined -Xlinker dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Senla.App;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,14 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1;
-				OTHER_LDFLAGS = (
-					"-Xlinker",
-					"-interposable",
-					"-Xlinker",
-					"-undefined",
-					"-Xlinker",
-					dynamic_lookup,
-				);
+				OTHER_LDFLAGS = "-Xlinker -interposable -Xlinker -undefined -Xlinker dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Senla.App;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,9 +1,11 @@
 /**/AutoMockable.generated.swift
 
 .DS_Store
+/**/.build
+/**/.swiftpm
 /.build
 /Packages
-/*.xcodeproj
+/**/*.xcodeproj
 xcuserdata/
 DerivedData/
 .swiftpm/config/registries.json

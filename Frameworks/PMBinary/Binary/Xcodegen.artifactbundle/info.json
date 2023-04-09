@@ -1,0 +1,15 @@
+{
+    "schemaVersion": "1.0",
+    "artifacts": {
+        "sourcery": {
+            "version": "2.34.0",
+            "type": "executable",
+            "variants": [
+                {
+                    "path": "Xcodegen/bin/xcodegen",
+                    "supportedTriples": ["x86_64-apple-macosx", "arm64-apple-macosx"]
+                }
+            ]
+        }
+    }
+}
