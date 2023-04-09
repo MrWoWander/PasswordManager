@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import PMDesignSystem
+import PMCore
 
 @main
 struct PasswordManagerApp: App {

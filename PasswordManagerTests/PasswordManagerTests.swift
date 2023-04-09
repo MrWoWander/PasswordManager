@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import Nimble
+import Quick
 @testable import PasswordManager
 
 final class PasswordManagerTests: XCTestCase {

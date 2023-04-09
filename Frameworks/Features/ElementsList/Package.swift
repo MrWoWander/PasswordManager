@@ -4,37 +4,43 @@
 import PackageDescription
 
 let package = Package(
-    name: "PMCore",
+    name: "ElementsList",
     platforms: [
         .iOS(.v16)
     ],
     products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "PMCore",
-            targets: ["PMCore"]
-        )
+            name: "ElementsList",
+            targets: ["ElementsList"]
+        ),
     ],
     dependencies: [
+        .package(local: "PMCore"),
         .package(local: "PMPlugins"),
+        .package(local: "PMDesignSystem"),
         .package(local: "PMExternalLibraries")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "PMCore",
+            name: "ElementsList",
             dependencies: [
-                .product(name: "PMCoreExternalLibraries", package: "PMExternalLibraries")
+                .product(name: "PMCore", package: "PMCore"),
+                .product(name: "PMDesignSystem", package: "PMDesignSystem")
             ],
             plugins: [
                 .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins")
             ]
         ),
         .testTarget(
-            name: "PMCoreTests",
+            name: "ElementsListTests",
             dependencies: [
-                "PMCore",
-                .product(name: "PMCoreExternalLibrariesTests", package: "PMExternalLibraries")
+                "ElementsList",
+                .product(name: "PMCore", package: "PMCore"),
+                .product(name: "PMDesignSystem", package: "PMDesignSystem"),
+                .product(name: "PMFeturesExternalLibrariesTests", package: "PMExternalLibraries")
             ],
             plugins: [
                 .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins"),
@@ -45,9 +51,9 @@ let package = Package(
 )
 
 enum Path: String {
-    case frameworks = "../"
-    case project = "../../"
-    case features = "../Features/"
+    case frameworks = "../../"
+    case project = "../../../"
+    case features = "../"
 }
 
 extension Package.Dependency {

@@ -15,6 +15,7 @@ struct SourceryCommandPlugin: BuildToolPlugin {
         return makeBuildCommands(
             sourceryPath: sourcery,
             configPath: target.directory,
+            packagePath: context.package.directory,
             pluginPath: context.pluginWorkDirectory,
             targetName: target.name,
             outputFilesDirectory: target.directory
@@ -32,6 +33,7 @@ extension SourceryCommandPlugin: XcodeBuildToolPlugin {
         return makeBuildCommands(
             sourceryPath: sourcery,
             configPath: context.xcodeProject.directory,
+            packagePath: nil,
             pluginPath: context.pluginWorkDirectory,
             targetName: target.displayName,
             outputFilesDirectory: outputFilesDirectory
@@ -90,12 +92,24 @@ private extension SourceryCommandPlugin {
     func makeBuildCommands(
         sourceryPath: Path,
         configPath: Path,
+        packagePath: Path?,
         pluginPath: Path,
         targetName: String,
         outputFilesDirectory: Path
     ) -> [PackagePlugin.Command] {
-        let configFilePath = configPath.appending(subpath: ".sourcery.yml").string
-        guard FileManager.default.fileExists(atPath: configFilePath) else {
+        let configFilePath: String? = {
+            let targetConfigFilePath = configPath.appending(subpath: ".sourcery.yml").string
+            if FileManager.default.fileExists(atPath: targetConfigFilePath) {
+                return targetConfigFilePath
+            }
+            guard let packagePath = packagePath else {
+                return nil
+            }
+            let packageConfigFilePath = packagePath.appending(subpath: ".sourcery.yml").string
+            guard FileManager.default.fileExists(atPath: packageConfigFilePath) else { return nil }
+            return packageConfigFilePath
+        }()
+        guard let configFilePath = configFilePath else {
             Diagnostics.warning("⚠️ Could not find `.sourcery.yml` for target \(targetName)")
             return []
         }

@@ -18,15 +18,17 @@ let package = Package(
     dependencies: [
         .package(local: "PMCore"),
         .package(local: "PMPlugins"),
-        .package(url: "https://github.com/Quick/Quick", .upToNextMajor(from: "6.1.0")),
-        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "11.2.0"))
+        .package(local: "PMExternalLibraries")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "PMDesignSystem",
-            dependencies: ["PMCore"],
+            dependencies: [
+                .product(name: "PMCore", package: "PMCore"),
+                .product(name: "PMDSExternalLibraries", package: "PMExternalLibraries")
+            ],
             plugins: [
                 .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins")
             ]
@@ -35,9 +37,8 @@ let package = Package(
             name: "PMDesignSystemTests",
             dependencies: [
                 "PMDesignSystem",
-                "PMCore",
-                "Quick",
-                "Nimble"
+                .product(name: "PMCore", package: "PMCore"),
+                .product(name: "PMDSExternalLibrariesTests", package: "PMExternalLibraries")
             ],
             plugins: [
                 .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins"),

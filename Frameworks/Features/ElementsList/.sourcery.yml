@@ -1,0 +1,12 @@
+sources:
+  - Sources/ElementsList/
+templates:
+  - ../../../Templates/Sourcery/AutoMockable.stencil
+output:
+   Tests/ElementsListTests/AutoMockable.generated.swift
+args:
+  app: ElementsList
+  imports:
+    - PMCore
+    - PMDesignSystem
+    - SwiftUI

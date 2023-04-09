@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D02705E29D8BB0300DD96B5 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 6D02705D29D8BB0300DD96B5 /* Nimble */; };
-		6D02706129D8BB2600DD96B5 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 6D02706029D8BB2600DD96B5 /* Quick */; };
+		6D25F93429E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93329E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests */; };
+		6D25F93629E2DF710043ACA5 /* PMMainAppExternalLibraries in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93529E2DF710043ACA5 /* PMMainAppExternalLibraries */; };
+		6D25F93829E2DF780043ACA5 /* PMCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93729E2DF780043ACA5 /* PMCore */; };
+		6D25F93A29E2DF7C0043ACA5 /* PMDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93929E2DF7C0043ACA5 /* PMDesignSystem */; };
+		6D25F93C29E2DF8C0043ACA5 /* ElementsList in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93B29E2DF8C0043ACA5 /* ElementsList */; };
 		6D82040429D8C3AA00942409 /* PMCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D82040329D8C3AA00942409 /* PMCore */; };
 		6D82040629D8C3AE00942409 /* PMDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 6D82040529D8C3AE00942409 /* PMDesignSystem */; };
 		6D82040929D8C69600942409 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D82040829D8C69600942409 /* AutoMockable.generated.swift */; };
@@ -32,7 +35,9 @@
 /* Begin PBXFileReference section */
 		6D02706229D8BB4E00DD96B5 /* PMPlugins */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMPlugins; path = Frameworks/PMPlugins; sourceTree = "<group>"; };
 		6D4CB78A29D88318009E9C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6D82040729D8C51700942409 /* PasswordManager.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = PasswordManager.xctestplan; sourceTree = SOURCE_ROOT; };
+		6D79539429E2DE480087DACF /* ElementsList */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ElementsList; sourceTree = "<group>"; };
+		6D79539529E2DE8B0087DACF /* PMExternalLibraries */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMExternalLibraries; path = Frameworks/PMExternalLibraries; sourceTree = "<group>"; };
+		6D82040729D8C51700942409 /* PasswordManager.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PasswordManager.xctestplan; sourceTree = SOURCE_ROOT; };
 		6D82040829D8C69600942409 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		6DABB2BC29D847A10040374C /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DABB2BF29D847A10040374C /* PasswordManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerApp.swift; sourceTree = "<group>"; };
@@ -50,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D25F93829E2DF780043ACA5 /* PMCore in Frameworks */,
+				6D25F93C29E2DF8C0043ACA5 /* ElementsList in Frameworks */,
+				6D25F93A29E2DF7C0043ACA5 /* PMDesignSystem in Frameworks */,
+				6D25F93629E2DF710043ACA5 /* PMMainAppExternalLibraries in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D02706129D8BB2600DD96B5 /* Quick in Frameworks */,
-				6D02705E29D8BB0300DD96B5 /* Nimble in Frameworks */,
 				6D82040629D8C3AE00942409 /* PMDesignSystem in Frameworks */,
+				6D25F93429E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests in Frameworks */,
 				6D82040429D8C3AA00942409 /* PMCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,12 +75,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D02705B29D89DE400DD96B5 /* Fetures */ = {
+		6D79539329E2DE240087DACF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				6D79539429E2DE480087DACF /* ElementsList */,
 			);
-			name = Fetures;
-			path = Frameworks/Fetures;
+			name = Features;
+			path = Frameworks/Features;
 			sourceTree = "<group>";
 		};
 		6D82040229D8C3AA00942409 /* Frameworks */ = {
@@ -87,7 +96,7 @@
 			children = (
 				6DABB2BE29D847A10040374C /* PasswordManager */,
 				6DABB2CF29D847A20040374C /* PasswordManagerTests */,
-				6D02705B29D89DE400DD96B5 /* Fetures */,
+				6D79539329E2DE240087DACF /* Features */,
 				6DABB2E929D84B560040374C /* Packages */,
 				6DABB2BD29D847A10040374C /* Products */,
 				6D82040229D8C3AA00942409 /* Frameworks */,
@@ -139,6 +148,7 @@
 				6DABB2EA29D84B560040374C /* PMCore */,
 				6DABB2EE29D856380040374C /* PMDesignSystem */,
 				6D02706229D8BB4E00DD96B5 /* PMPlugins */,
+				6D79539529E2DE8B0087DACF /* PMExternalLibraries */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -160,6 +170,12 @@
 				6D02705829D89D4200DD96B5 /* PBXTargetDependency */,
 			);
 			name = PasswordManager;
+			packageProductDependencies = (
+				6D25F93529E2DF710043ACA5 /* PMMainAppExternalLibraries */,
+				6D25F93729E2DF780043ACA5 /* PMCore */,
+				6D25F93929E2DF7C0043ACA5 /* PMDesignSystem */,
+				6D25F93B29E2DF8C0043ACA5 /* ElementsList */,
+			);
 			productName = PasswordManager;
 			productReference = 6DABB2BC29D847A10040374C /* PasswordManager.app */;
 			productType = "com.apple.product-type.application";
@@ -181,10 +197,9 @@
 			);
 			name = PasswordManagerTests;
 			packageProductDependencies = (
-				6D02705D29D8BB0300DD96B5 /* Nimble */,
-				6D02706029D8BB2600DD96B5 /* Quick */,
 				6D82040329D8C3AA00942409 /* PMCore */,
 				6D82040529D8C3AE00942409 /* PMDesignSystem */,
+				6D25F93329E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests */,
 			);
 			productName = PasswordManagerTests;
 			productReference = 6DABB2CC29D847A20040374C /* PasswordManagerTests.xctest */;
@@ -219,8 +234,6 @@
 			);
 			mainGroup = 6DABB2B329D847A10040374C;
 			packageReferences = (
-				6D02705C29D8BB0300DD96B5 /* XCRemoteSwiftPackageReference "Nimble" */,
-				6D02705F29D8BB2600DD96B5 /* XCRemoteSwiftPackageReference "Quick" */,
 			);
 			productRefGroup = 6DABB2BD29D847A10040374C /* Products */;
 			projectDirPath = "";
@@ -551,39 +564,30 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		6D02705C29D8BB0300DD96B5 /* XCRemoteSwiftPackageReference "Nimble" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Quick/Nimble";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.0;
-			};
-		};
-		6D02705F29D8BB2600DD96B5 /* XCRemoteSwiftPackageReference "Quick" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Quick/Quick";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		6D02705729D89D4200DD96B5 /* PMSwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "plugin:PMSwiftLintPlugin";
 		};
-		6D02705D29D8BB0300DD96B5 /* Nimble */ = {
+		6D25F93329E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D02705C29D8BB0300DD96B5 /* XCRemoteSwiftPackageReference "Nimble" */;
-			productName = Nimble;
+			productName = PMMainAppExternalLibrariesTests;
 		};
-		6D02706029D8BB2600DD96B5 /* Quick */ = {
+		6D25F93529E2DF710043ACA5 /* PMMainAppExternalLibraries */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D02705F29D8BB2600DD96B5 /* XCRemoteSwiftPackageReference "Quick" */;
-			productName = Quick;
+			productName = PMMainAppExternalLibraries;
+		};
+		6D25F93729E2DF780043ACA5 /* PMCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PMCore;
+		};
+		6D25F93929E2DF7C0043ACA5 /* PMDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PMDesignSystem;
+		};
+		6D25F93B29E2DF8C0043ACA5 /* ElementsList */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ElementsList;
 		};
 		6D8203FE29D8BB7100942409 /* PMSourceryPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
