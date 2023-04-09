@@ -12,6 +12,10 @@ let package = Package(
         .library(
             name: "PMCore",
             targets: ["PMCore"]
+        ),
+        .library(
+            name: "PMProtocols",
+            targets: ["PMProtocols"]
         )
     ],
     dependencies: [
@@ -26,6 +30,13 @@ let package = Package(
             dependencies: [
                 .product(name: "PMCoreExternalLibraries", package: "PMExternalLibraries")
             ],
+            plugins: [
+                .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins")
+            ]
+        ),
+        .target(
+            name: "PMProtocols",
+            dependencies: [],
             plugins: [
                 .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins")
             ]

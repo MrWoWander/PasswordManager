@@ -6,14 +6,12 @@
 //
 
 import SwiftUI
-import PMDesignSystem
-import PMCore
 
 @main
 struct PasswordManagerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainViewFactory().build()
         }
     }
 }

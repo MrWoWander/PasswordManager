@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "ElementsList",
+    name: "ElementsListFeature",
     platforms: [
         .iOS(.v16)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "ElementsList",
-            targets: ["ElementsList"]
+            name: "ElementsListFeature",
+            targets: ["ElementsListFeature"]
         ),
     ],
     dependencies: [
@@ -25,9 +25,10 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "ElementsList",
+            name: "ElementsListFeature",
             dependencies: [
                 .product(name: "PMCore", package: "PMCore"),
+                .product(name: "PMProtocols", package: "PMCore"),
                 .product(name: "PMDesignSystem", package: "PMDesignSystem")
             ],
             plugins: [
@@ -37,7 +38,7 @@ let package = Package(
         .testTarget(
             name: "ElementsListTests",
             dependencies: [
-                "ElementsList",
+                .target(name: "ElementsListFeature"),
                 .product(name: "PMCore", package: "PMCore"),
                 .product(name: "PMDesignSystem", package: "PMDesignSystem"),
                 .product(name: "PMFeturesExternalLibrariesTests", package: "PMExternalLibraries")
