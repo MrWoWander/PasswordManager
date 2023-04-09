@@ -6,21 +6,26 @@
 //
 
 import SwiftUI
+import MainModels
 
-struct MainView<ViewModel: MainViewViewModelProtocol>: View {
+struct MainView<ViewModel: MainViewModelProtocol>: View {
     @StateObject private var viewModel: ViewModel
 
     init(viewModel: ViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
     var body: some View {
-        TabView(selection: $viewModel.tabSelection) {
+        TabView(selection: viewModel.tag) {
             Color(.blue)
                 .tabItem {
                     Label("Color", image: "")
                 }
-                .tag(0)
+                .tag(MainTabSections.color.rawValue)
             viewModel.elementsListView
+                .tabItem {
+                    Label("ElementsListView", image: "")
+                }
+                .tag(MainTabSections.elementsList.rawValue)
         }
     }
 }

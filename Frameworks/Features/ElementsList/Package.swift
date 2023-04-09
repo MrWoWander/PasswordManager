@@ -17,6 +17,7 @@ let package = Package(
     ],
     dependencies: [
         .package(local: "PMCore"),
+        .package(local: "PMProtocols"),
         .package(local: "PMPlugins"),
         .package(local: "PMDesignSystem"),
         .package(local: "PMExternalLibraries")
@@ -28,7 +29,7 @@ let package = Package(
             name: "ElementsListFeature",
             dependencies: [
                 .product(name: "PMCore", package: "PMCore"),
-                .product(name: "PMProtocols", package: "PMCore"),
+                .product(name: "PMProtocols", package: "PMProtocols"),
                 .product(name: "PMDesignSystem", package: "PMDesignSystem")
             ],
             plugins: [

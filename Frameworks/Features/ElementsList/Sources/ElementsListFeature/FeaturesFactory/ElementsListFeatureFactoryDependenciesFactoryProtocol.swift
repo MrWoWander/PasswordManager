@@ -5,7 +5,9 @@
 //  Created by Mikhail Ivanov on 09.04.23.
 //
 
-import Foundation
+import PMProtocols
 
 // sourcery: AutoMockable
-public protocol ElementsListFeatureFactoryDependenciesFactoryProtocol: AnyObject {}
+public protocol ElementsListFeatureFactoryDependenciesFactoryProtocol: AnyObject {
+    func getTabViewSelectionViewModel() -> TabViewSelectionProtocol?
+}

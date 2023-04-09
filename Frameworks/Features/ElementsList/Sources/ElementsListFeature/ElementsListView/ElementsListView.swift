@@ -1,3 +1,4 @@
+import PMProtocols
 import SwiftUI
 
 struct ElementsListView<ViewModel: ElementsListViewViewModelProtocol>: View {
@@ -12,7 +13,10 @@ struct ElementsListView<ViewModel: ElementsListViewViewModelProtocol>: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, world!").padding(.vertical)
+            Button("Click") {
+                viewModel.changeSelection(.color)
+            }
         }
         .padding()
     }

@@ -16,7 +16,9 @@ final class ElementsListViewFactory: FactoryViewProtocol {
     }
 
     func build() -> AnyView {
-        let viewModel = ElementsListViewViewModel()
+        let viewModel = ElementsListViewViewModel(
+            tabViewSelectionViewModel: deps.getTabViewSelectionViewModel()
+        )
         let view = ElementsListView(viewModel: viewModel)
         return .init(view)
     }

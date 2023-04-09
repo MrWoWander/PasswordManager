@@ -4,43 +4,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "PMCore",
+    name: "PMModels",
     platforms: [
         .iOS(.v16)
     ],
     products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "PMCore",
-            targets: ["PMCore"]
-        )
+            name: "MainModels",
+            targets: ["MainModels"]
+        ),
     ],
     dependencies: [
-        .package(local: "PMPlugins"),
-        .package(local: "PMExternalLibraries")
+        .package(local: "PMCore")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "PMCore",
+            name: "MainModels",
             dependencies: [
-                .product(name: "PMCoreExternalLibraries", package: "PMExternalLibraries")
-            ],
-            plugins: [
-                .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins")
+                .product(name: "PMCore", package: "PMCore")
             ]
-        ),
-        .testTarget(
-            name: "PMCoreTests",
-            dependencies: [
-                "PMCore",
-                .product(name: "PMCoreExternalLibrariesTests", package: "PMExternalLibraries")
-            ],
-            plugins: [
-                .plugin(name: "PMSwiftLintPlugin", package: "PMPlugins"),
-                .plugin(name: "PMSourceryPlugin", package: "PMPlugins")
-            ]
-        ),
+        )
     ]
 )
 
@@ -55,3 +41,4 @@ extension Package.Dependency {
         .package(path: path.rawValue + name)
     }
 }
+

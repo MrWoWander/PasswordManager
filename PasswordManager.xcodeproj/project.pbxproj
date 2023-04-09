@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		6D07D27129E2EB4100726FCF /* ElementsListFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 6D07D27029E2EB4100726FCF /* ElementsListFeature */; };
 		6D07D27629E2F13D00726FCF /* ElementsListFeatureFactoryDependenciesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07D27529E2F13D00726FCF /* ElementsListFeatureFactoryDependenciesFactory.swift */; };
-		6D07D27829E2F17400726FCF /* MainViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07D27729E2F17400726FCF /* MainViewFactory.swift */; };
-		6D07D27A29E2F1D100726FCF /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07D27929E2F1D100726FCF /* MainViewViewModel.swift */; };
+		6D07D27829E2F17400726FCF /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07D27729E2F17400726FCF /* MainFactory.swift */; };
+		6D07D27A29E2F1D100726FCF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07D27929E2F1D100726FCF /* MainViewModel.swift */; };
+		6D07D27E29E2FF4300726FCF /* MainViewDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07D27D29E2FF4300726FCF /* MainViewDependencies.swift */; };
+		6D07D28329E3113C00726FCF /* MainModels in Frameworks */ = {isa = PBXBuildFile; productRef = 6D07D28229E3113C00726FCF /* MainModels */; };
 		6D25F93429E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93329E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests */; };
 		6D25F93629E2DF710043ACA5 /* PMMainAppExternalLibraries in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93529E2DF710043ACA5 /* PMMainAppExternalLibraries */; };
 		6D25F93829E2DF780043ACA5 /* PMCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D25F93729E2DF780043ACA5 /* PMCore */; };
@@ -23,6 +25,7 @@
 		6DABB2C429D847A20040374C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DABB2C329D847A20040374C /* Assets.xcassets */; };
 		6DABB2C729D847A20040374C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DABB2C629D847A20040374C /* Preview Assets.xcassets */; };
 		6DABB2D129D847A20040374C /* PasswordManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABB2D029D847A20040374C /* PasswordManagerTests.swift */; };
+		6DE89ECA29E31C7E00F1F26C /* PMProtocols in Frameworks */ = {isa = PBXBuildFile; productRef = 6DE89EC929E31C7E00F1F26C /* PMProtocols */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,11 @@
 /* Begin PBXFileReference section */
 		6D02706229D8BB4E00DD96B5 /* PMPlugins */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMPlugins; path = Frameworks/PMPlugins; sourceTree = "<group>"; };
 		6D07D27529E2F13D00726FCF /* ElementsListFeatureFactoryDependenciesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsListFeatureFactoryDependenciesFactory.swift; sourceTree = "<group>"; };
-		6D07D27729E2F17400726FCF /* MainViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewFactory.swift; sourceTree = "<group>"; };
-		6D07D27929E2F1D100726FCF /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		6D07D27729E2F17400726FCF /* MainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
+		6D07D27929E2F1D100726FCF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6D07D27D29E2FF4300726FCF /* MainViewDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewDependencies.swift; sourceTree = "<group>"; };
+		6D07D28129E30DFB00726FCF /* PMModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMModels; path = Frameworks/PMModels; sourceTree = "<group>"; };
+		6D07D28429E31B6300726FCF /* PMProtocols */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMProtocols; path = Frameworks/PMProtocols; sourceTree = "<group>"; };
 		6D4CB78A29D88318009E9C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6D79539429E2DE480087DACF /* ElementsList */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ElementsList; sourceTree = "<group>"; };
 		6D79539529E2DE8B0087DACF /* PMExternalLibraries */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMExternalLibraries; path = Frameworks/PMExternalLibraries; sourceTree = "<group>"; };
@@ -54,6 +60,7 @@
 		6DABB2D029D847A20040374C /* PasswordManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerTests.swift; sourceTree = "<group>"; };
 		6DABB2EA29D84B560040374C /* PMCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMCore; path = Frameworks/PMCore; sourceTree = "<group>"; };
 		6DABB2EE29D856380040374C /* PMDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMDesignSystem; path = Frameworks/PMDesignSystem; sourceTree = "<group>"; };
+		6DE89ECB29E31DCB00F1F26C /* PMDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PMDesignSystem; path = Frameworks/PMDesignSystem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,8 @@
 			files = (
 				6D07D27129E2EB4100726FCF /* ElementsListFeature in Frameworks */,
 				6D25F93829E2DF780043ACA5 /* PMCore in Frameworks */,
+				6D07D28329E3113C00726FCF /* MainModels in Frameworks */,
+				6DE89ECA29E31C7E00F1F26C /* PMProtocols in Frameworks */,
 				6D25F93A29E2DF7C0043ACA5 /* PMDesignSystem in Frameworks */,
 				6D25F93629E2DF710043ACA5 /* PMMainAppExternalLibraries in Frameworks */,
 			);
@@ -85,8 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				6DABB2C129D847A10040374C /* MainView.swift */,
-				6D07D27729E2F17400726FCF /* MainViewFactory.swift */,
-				6D07D27929E2F1D100726FCF /* MainViewViewModel.swift */,
+				6D07D27729E2F17400726FCF /* MainFactory.swift */,
+				6D07D27929E2F1D100726FCF /* MainViewModel.swift */,
+				6D07D27D29E2FF4300726FCF /* MainViewDependencies.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -182,6 +192,9 @@
 				6DABB2EE29D856380040374C /* PMDesignSystem */,
 				6D02706229D8BB4E00DD96B5 /* PMPlugins */,
 				6D79539529E2DE8B0087DACF /* PMExternalLibraries */,
+				6D07D28129E30DFB00726FCF /* PMModels */,
+				6D07D28429E31B6300726FCF /* PMProtocols */,
+				6DE89ECB29E31DCB00F1F26C /* PMDesignSystem */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -208,6 +221,8 @@
 				6D25F93729E2DF780043ACA5 /* PMCore */,
 				6D25F93929E2DF7C0043ACA5 /* PMDesignSystem */,
 				6D07D27029E2EB4100726FCF /* ElementsListFeature */,
+				6D07D28229E3113C00726FCF /* MainModels */,
+				6DE89EC929E31C7E00F1F26C /* PMProtocols */,
 			);
 			productName = PasswordManager;
 			productReference = 6DABB2BC29D847A10040374C /* PasswordManager.app */;
@@ -302,10 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D07D27829E2F17400726FCF /* MainViewFactory.swift in Sources */,
+				6D07D27829E2F17400726FCF /* MainFactory.swift in Sources */,
 				6D07D27629E2F13D00726FCF /* ElementsListFeatureFactoryDependenciesFactory.swift in Sources */,
+				6D07D27E29E2FF4300726FCF /* MainViewDependencies.swift in Sources */,
 				6DABB2C229D847A10040374C /* MainView.swift in Sources */,
-				6D07D27A29E2F1D100726FCF /* MainViewViewModel.swift in Sources */,
+				6D07D27A29E2F1D100726FCF /* MainViewModel.swift in Sources */,
 				6DABB2C029D847A10040374C /* PasswordManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +625,10 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = ElementsListFeature;
 		};
+		6D07D28229E3113C00726FCF /* MainModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainModels;
+		};
 		6D25F93329E2DF6B0043ACA5 /* PMMainAppExternalLibrariesTests */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PMMainAppExternalLibrariesTests;
@@ -640,6 +660,10 @@
 		6D82040529D8C3AE00942409 /* PMDesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PMDesignSystem;
+		};
+		6DE89EC929E31C7E00F1F26C /* PMProtocols */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PMProtocols;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
